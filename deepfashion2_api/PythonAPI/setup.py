@@ -11,7 +11,7 @@ ext_modules = [
         'pycocotools._mask',
         sources=['../common/maskApi.c', 'pycocotools/_mask.pyx'],
         include_dirs=[np.get_include(), '../common'],
-        extra_compile_args=[]  # Assurez-vous que cette liste est vide ou bien adaptée pour MSVC
+        extra_compile_args=[]  # Supprimer tous les arguments GCC incompatibles
     )
 ]
 
