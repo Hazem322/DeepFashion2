@@ -11,7 +11,8 @@ ext_modules = [
         'pycocotools._mask',
         sources=['../common/maskApi.c', 'pycocotools/_mask.pyx'],
         include_dirs = [np.get_include(), '../common'],
-     extra_compile_args=['-Wno-unused-function'],
+     extra_compile_args = []
+,
 
     )
 ]
